@@ -6,33 +6,51 @@
     <title>Extended Unit Database</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Consolas', 'Courier New', monospace; /* Sharper monospace font */
+            margin: 0;
+            padding: 0;
             background-color: #2e2e2e;
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            flex-direction: column;
             overflow: hidden;
+            transition: background-color 0.5s ease;
         }
+
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            text-align: center;
-            font-weight: 700;
-            opacity: 0.9;
-            margin: 0;
+            letter-spacing: 5px;
+            cursor: pointer;
             transition: transform 0.3s ease, opacity 0.3s ease;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow for sharpness */
         }
+
         h1:hover {
             transform: scale(1.1);
-            opacity: 1;
+            opacity: 0.8;
+        }
+
+        /* Make sure text stays centered and page fills the screen */
+        .container {
+            text-align: center;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Extended Unit Database</h1>
+    <div class="container">
+        <h1>Extended Unit Database</h1>
+    </div>
 </body>
 </html>
